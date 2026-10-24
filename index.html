@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Donghao Liu | Mathematics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+      color: #293748;
+      font: 16px/1.72 Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 58px 60px;
+      background: white;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 46px;
+      color: #233951;
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #233951;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #293748;
+      margin: 0 0 5px;
+    }
+
+    p {
+      margin: 5px 0 12px;
+    }
+
+    a {
+      color: #235f9a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 34px;
+    }
+
+    .bio {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .contact {
+      font-size: 14px;
+      margin: 4px 0 17px;
+      overflow-wrap: anywhere;
+    }
+
+    .email-divider {
+      margin: 0 7px;
+      color: #677789;
+    }
+
+    .cv-link {
+      display: inline-block;
+      margin-top: 3px;
+    }
+
+    .photo {
+      width: 195px;
+      height: 240px;
+      flex-shrink: 0;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 3px;
+      border: 1px solid #d6dce2;
+    }
+
+    .photo-placeholder {
+      display: none;
+      width: 195px;
+      height: 240px;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      background: #e6ebf1;
+      color: #52677f;
+      font: 44px Georgia, serif;
+    }
+
+    nav {
+      margin-top: 28px;
+      padding: 15px 0;
+      border-top: 1px solid #dfe5eb;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 22px 0 27px;
+      border-bottom: 1px solid #dfe5eb;
+    }
+
+    .work-item {
+      margin-bottom: 12px;
+    }
+
+    .work-item p {
+      margin: 6px 0;
+    }
+
+    .reference-list {
+      padding-left: 24px;
+      margin-top: 8px;
+    }
+
+    .reference-list li {
+      margin-bottom: 17px;
+      padding-left: 4px;
+    }
+
+    .reference-status {
+      color: #596c7f;
+    }
+
+    footer {
+      padding-top: 22px;
+      font-size: 13px;
+      color: #758394;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 30px 20px;
+      }
+
+      .intro {
+        gap: 15px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .photo,
+      .photo-placeholder {
+        width: 105px;
+        height: 135px;
+      }
+
+      nav a {
+        margin-right: 13px;
+        margin-bottom: 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <!-- NAME, CONTACT, CV, PHOTO -->
+
+  <header>
+
+    <div class="intro">
+
+      <div class="bio">
+
+        <h1>Donghao Liu</h1>
+
+        <div class="contact">
+
+          Contact:
+
+          <a href="mailto:dliu354@wisc.edu">
+            dliu354@wisc.edu
+          </a>
+
+          <span class="email-divider">/</span>
+
+          <a href="mailto:donghaoliu473@gmail.com">
+            donghaoliu473@gmail.com
+          </a>
+
+          <br>
+
+          <a class="cv-link"
+             href="Image/CV/Donghao_Liu_CV.pdf"
+             target="_blank"
+             rel="noopener">
+            My CV 
+          </a>
+
+        </div>
+
+        <p>
+          <a href="https://math.wisc.edu/">
+            Department of Mathematics
+          </a>
+          <br>
+          <a href="https://www.wisc.edu/">
+            University of Wisconsin–Madison
+          </a>
+        </p>
+
+      </div>
+
+      <!-- Personal Photo -->
+
+      <img
+        class="photo"
+        src="Image/profile.jpg"
+        alt="Donghao Liu"
+        onerror="
+          this.style.display='none';
+          document.getElementById('photo-fallback').style.display='flex';
+        "
+      >
+
+      <div class="photo-placeholder"
+           id="photo-fallback">
+        DL
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+
+    <nav aria-label="Sections">
+      <a href="#research">Research Interests</a>
+      <a href="#work">Current Work</a>
+      <a href="#publications">Publications</a>
+      <a href="#activities">Academic Activities</a>
+    </nav>
+
+  </header>
+
+
+  <!-- RESEARCH INTERESTS -->
+
+  <section id="research">
+
+    <h2>Research Interests</h2>
+
+    <p>
+      Dynamical systems, chemical reaction network
+      theory, and mathematical biology.
+
+      I am particularly interested in the interplay
+      between reaction network structure and the
+      qualitative behavior of nonlinear differential
+      equations.
+
+
+    </p>
+
+  </section>
+
+
+  <!-- CURRENT WORK -->
+
+  <section id="work">
+
+    <h2>Current Work</h2>
+
+    <div class="work-item">
+
+      <h3>
+        Convex Geometric Criteria for
+        Weighted Horn–Jackson Dissipation
+      </h3>
+
+      <p>
+        This work studies the existence of positive
+        diagonal weights that make weighted
+        Horn–Jackson functions non-increasing
+        in generalized mass-action systems.
+
+        It establishes finite convex-geometric
+        criteria under specified assumptions
+        on reaction network structure.
+
+        Future studying plans please see the discussion part in the preprint below.
+      </p>
+
+      <p>
+        <a
+          href="https://doi.org/10.5281/zenodo.23608863"
+          target="_blank"
+          rel="noopener noreferrer">
+          [Preprint / DOI]
+        </a>
+
+        <span class="reference-status">
+          Zenodo, 2026
+        </span>
+      </p>
+
+    </div>
+
+    <!-- Project 2: dgcY -->
+
+<div class="work-item">
+
+  <h3>
+    Evolutionary Origin of
+    <i>dgcY</i> in Halophilic Bacteria
+  </h3>
+
+  <p>
+    This project investigates the evolutionary
+    origin of <i>dgcY</i> in halophilic bacteria
+    through comparative genomics and
+    phylogenetic analysis.
+
+    It examines the incongruence between
+    DgcY and 16S rRNA phylogenies,
+    the genomic context of the Doe gene
+    cluster, and the possibility of
+    horizontal gene transfer.
+  </p>
+
+</div>
+
+  </section>
+
+
+  <!-- PUBLICATIONS -->
+
+  <section id="publications">
+
+    <h2>Publications</h2>
+
+    <ol class="reference-list">
+
+      <!-- Publication 1 -->
+
+      <li>
+        X. Cao,
+        <strong>D. Liu</strong>,
+        T. Zhao, and J. Zhu,
+
+        "Stirling's Formula: An Exploration
+        on Its Theoretical Foundation and
+        Applications,"
+
+        <em>
+          Journal of Physics: Conference Series
+        </em>,
+
+        vol. 3042,
+        no. 1,
+        article 012007,
+        2025.
+
+        <a
+          href="https://doi.org/10.1088/1742-6596/3042/1/012007"
+          target="_blank"
+          rel="noopener">
+          [DOI]
+        </a>
+      </li>
+
+
+      <!-- Publication 2 -->
+
+      <li>
+        H. Chen,
+        <strong>D. Liu</strong>,
+        and M. Liu,
+
+        "Epidemic Dynamics and Local Spectral
+        Optimization of Heterogeneous Migration
+        in Metapopulation Networks with
+        Information-Induced Degree-Class
+        Heterogeneity,"
+
+        <span class="reference-status">
+          submitted to
+          <em>Physica Scripta</em>,
+          2026.
+        </span>
+      </li>
+
+
+      <!-- Publication 3 -->
+
+      <li>
+        <strong>D. Liu</strong>,
+
+        "Convex Geometric Criteria for
+        Weighted Horn–Jackson Dissipation,"
+
+        <em>Zenodo</em>,
+        Preprint,
+        2026.
+
+        <a
+          href="https://doi.org/10.5281/zenodo.23608863"
+          target="_blank"
+          rel="noopener noreferrer">
+          [DOI: 10.5281/zenodo.23608863]
+        </a>
+      </li>
+
+    </ol>
+
+  </section>
+
+
+  <!-- ACADEMIC ACTIVITIES -->
+
+  <section id="activities">
+
+    <h2>Academic Activities</h2>
+
+    <ul>
+      <li>
+        Undergraduate Mathematics Symposium
+        (UMS), 2026 — Poster
+      </li>
+    </ul>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    Donghao Liu · University of Wisconsin–Madison
+  </footer>
+
+</main>
+
+</body>
+</html>
