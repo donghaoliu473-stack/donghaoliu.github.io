@@ -137,6 +137,29 @@
       border-bottom: 1px solid #dfe5eb;
     }
 
+    /* EDUCATION */
+
+    .education-item {
+      margin-bottom: 20px;
+    }
+
+    .education-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .education-item h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .education-item p {
+      margin: 3px 0;
+      color: #526174;
+      line-height: 1.65;
+    }
+
+    /* RESEARCH AND CURRENT WORK */
+
     .work-item {
       margin-bottom: 12px;
     }
@@ -144,6 +167,8 @@
     .work-item p {
       margin: 6px 0;
     }
+
+    /* PUBLICATIONS */
 
     .reference-list {
       padding-left: 24px;
@@ -164,6 +189,8 @@
       font-size: 13px;
       color: #758394;
     }
+
+    /* MOBILE DISPLAY */
 
     @media (max-width: 640px) {
       main {
@@ -226,7 +253,7 @@
              href="Image/CV/Donghao_Liu_CV.pdf"
              target="_blank"
              rel="noopener">
-            My CV 
+            My CV
           </a>
 
         </div>
@@ -243,11 +270,11 @@
 
       </div>
 
-      <!-- Personal Photo -->
+      <!-- PERSONAL PHOTO -->
 
       <img
         class="photo"
-       src="Image/9378f964680ec13bbbe9f241ad68f2eb.jpg"
+        src="Image/9378f964680ec13bbbe9f241ad68f2eb.jpg"
         alt="Donghao Liu"
         onerror="
           this.style.display='none';
@@ -262,9 +289,10 @@
 
     </div>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
 
     <nav aria-label="Sections">
+      <a href="#education">Education</a>
       <a href="#research">Research Interests</a>
       <a href="#work">Current Work</a>
       <a href="#publications">Publications</a>
@@ -274,6 +302,73 @@
   </header>
 
 
+ 
+<!-- EDUCATION -->
+
+<section id="education">
+
+  <h2>Education</h2>
+
+  <!-- University of Wisconsin–Madison -->
+
+  <div class="education-item">
+
+    <div class="education-header">
+      <h3>
+        <a href="https://www.wisc.edu/">
+          University of Wisconsin–Madison
+        </a>
+      </h3>
+
+      <span class="education-date">
+        September 2025 – May 2027
+      </span>
+    </div>
+
+    <div class="education-details">
+      <div class="education-degree">
+        B.S. in Mathematics
+        (Mathematics for Physical and Biological Sciences)
+      </div>
+
+      <div class="education-location">
+        Madison, WI
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tiangong University -->
+
+  <div class="education-item">
+
+    <div class="education-header">
+      <h3>
+        <a href="https://en.tiangong.edu.cn/">
+          Tiangong University
+        </a>
+      </h3>
+
+      <span class="education-date">
+        September 2023 – June 2025
+      </span>
+    </div>
+
+    <div class="education-details">
+      <div class="education-degree">
+        Mathematics and Applied Mathematics
+      </div>
+
+      <div class="education-location">
+        Tianjin, China
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
   <!-- RESEARCH INTERESTS -->
 
   <section id="research">
@@ -281,10 +376,31 @@
     <h2>Research Interests</h2>
 
     <p>
-     My research interests lie in nonlinear dynamical systems, chemical reaction network theory, and mathematical biology, including mathematical epidemiology. I am particularly interested in the interplay between network structure and the qualitative behavior of nonlinear differential equations, including stability, persistence and global dynamics. My goal is to understand how structural and geometric properties of networks determine their dynamical behavior and to develop general mathematical frameworks for analyzing nonlinear systems.
+      My research interests lie in nonlinear
+      dynamical systems, chemical reaction
+      network theory, and mathematical biology,
+      including mathematical epidemiology.
 
-I am also interested in applying the approaches in nonlinear dynamical systems to biological systems, particularly endemic dynamics with different settings such as media-response and people movement between patches. 
+      I am particularly interested in the
+      interplay between network structure and
+      the qualitative behavior of nonlinear
+      differential equations, including
+      stability, persistence and global dynamics.
 
+      My goal is to understand how structural
+      and geometric properties of networks
+      determine their dynamical behavior and
+      to develop general mathematical frameworks
+      for analyzing nonlinear systems.
+    </p>
+
+    <p>
+      I am also interested in applying the
+      approaches in nonlinear dynamical systems
+      to biological systems, particularly
+      endemic dynamics with different settings
+      such as media-response and people movement
+      between patches.
     </p>
 
   </section>
@@ -296,6 +412,8 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
 
     <h2>Current Work</h2>
 
+    <!-- PROJECT 1 -->
+
     <div class="work-item">
 
       <h3>
@@ -304,16 +422,18 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
       </h3>
 
       <p>
-        This work studies the existence of positive
-        diagonal weights that make weighted
-        Horn–Jackson functions non-increasing
-        in generalized mass-action systems.
+        This work studies the existence of
+        positive diagonal weights that make
+        weighted Horn–Jackson functions
+        non-increasing in generalized
+        mass-action systems.
 
         It establishes finite convex-geometric
         criteria under specified assumptions
         on reaction network structure.
 
-        Future studying plans please see the discussion part in the preprint below.
+        Future studying plans please see
+        the discussion part in the preprint below.
       </p>
 
       <p>
@@ -331,29 +451,30 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
 
     </div>
 
-    <!-- Project 2: dgcY -->
 
-<div class="work-item">
+    <!-- PROJECT 2: DGCY -->
 
-  <h3>
-    Evolutionary Origin of
-    <i>dgcY</i> in Halophilic Bacteria
-  </h3>
+    <div class="work-item">
 
-  <p>
-    This project investigates the evolutionary
-    origin of <i>dgcY</i> in halophilic bacteria
-    through comparative genomics and
-    phylogenetic analysis.
+      <h3>
+        Evolutionary Origin of
+        <i>dgcY</i> in Halophilic Bacteria
+      </h3>
 
-    It examines the incongruence between
-    DgcY and 16S rRNA phylogenies,
-    the genomic context of the Doe gene
-    cluster, and the possibility of
-    horizontal gene transfer (HGT).
-  </p>
+      <p>
+        This project investigates the evolutionary
+        origin of <i>dgcY</i> in halophilic bacteria
+        through comparative genomics and
+        phylogenetic analysis.
 
-</div>
+        It examines the incongruence between
+        DgcY and 16S rRNA phylogenies,
+        the genomic context of the Doe gene
+        cluster, and the possibility of
+        horizontal gene transfer (HGT).
+      </p>
+
+    </div>
 
   </section>
 
@@ -366,7 +487,7 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
 
     <ol class="reference-list">
 
-      <!-- Publication 1 -->
+      <!-- PUBLICATION 1 -->
 
       <li>
         X. Cao,
@@ -395,7 +516,7 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
       </li>
 
 
-      <!-- Publication 2 -->
+      <!-- PUBLICATION 2 -->
 
       <li>
         H. Chen,
@@ -416,7 +537,7 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
       </li>
 
 
-      <!-- Publication 3 -->
+      <!-- PUBLICATION 3 -->
 
       <li>
         <strong>D. Liu</strong>,
@@ -467,3 +588,4 @@ I am also interested in applying the approaches in nonlinear dynamical systems t
 
 </body>
 </html>
+
